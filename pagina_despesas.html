@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Despesas</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Link para a CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Chamada da CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Chamado do JS no BS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body class="container-fluid">
+    <header>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <nav class="navbar navbar-expand-lg px-3" style="background-color: #1A3270;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon btn-light"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="./Index.html"><img style="width: auto;"
+                                src="./assets/images/TudonoControleBaixoRsl.png" alt="Marca"></a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html"
+                                    style="color: white; width: 90%;">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" style="color: white;" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ganhos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mensal</a></li>
+                                    <li><a class="dropdown-item" href="#">Anual</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" style="color: white;" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Despesas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mensal</a></li>
+                                    <li><a class="dropdown-item" href="#">Anual</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" style="color: white;" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Metas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Curto Prazo</a></li>
+                                    <li><a class="dropdown-item" href="#">Longo Prazo</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Objetivos</a></li>
+                                </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" style="color: white;" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ajuda
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                    <li><a class="dropdown-item" href="#">Fale Conosco</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sua Conta</a></li>
+                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html" style="color: white;">Baixe o
+                                    APP</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Digite o que procura"
+                                aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Procurar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <br>
+    <main>
+        <div class="ms-auto">
+            <h5><i class="fa-solid fa-user users"></i> Fabricio Fiap</h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="card-header"><br>
+                        <h2 align="center">GASTOS E DÍVIDAS</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="color: white; background-color: #1A3270">ITEM</th>
+                                    <th style="color: white; background-color: #1A3270">
+                                        <div align="center">VALOR MÊS</div>
+                                    </th>
+                                    <th style="color: white; background-color: #1A3270">
+                                        <div align="center">MÊS/ANO</div>
+                                    </th>
+                                    <th style="color: white; background-color: #1A3270">
+                                        <div align="center">TIPO</div>
+                                    </th>
+                                    <th style="color: white; background-color: #1A3270">
+                                        <div align="center">INFO</div>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td style="width: 30%;">Colégio Marquinhos</td>
+                                    <td style="width: 20%;" align="center">R$ 2.200,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Colégio Julinha</td>
+                                    <td style="width: 20%;" align="center">R$ 1.600,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Condomínio</td>
+                                    <td style="width: 20%;" align="center">R$ 1.800,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Mercado</td>
+                                    <td style="width: 20%;" align="center">R$ 1.400,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Luz</td>
+                                    <td style="width: 20%;" align="center">R$ 180,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Gás</td>
+                                    <td style="width: 20%;" align="center">R$ 160,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Inglês Marquinhos</td>
+                                    <td style="width: 20%;" align="center">R$ 260,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Internet</td>
+                                    <td style="width: 20%;" align="center">R$ 99,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Gasolina</td>
+                                    <td style="width: 20%;" align="center">R$ 480,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Gasto</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Financiamento Apto Parcela 62/120</td>
+                                    <td style="width: 20%;" align="center">R$ 3.800,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Dívida</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">Viagem Europa Parcela 8/12</td>
+                                    <td style="width: 20%;" align="center">R$ 2.300,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Dívida</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 30%;">TOTAIS PAGÁVEIS</td>
+                                    <td style="width: 20%; color:#f70000 " align="center">R$ 14.279,00</td>
+                                    <td style="width: 15%;" align="center">Jul/23</td>
+                                    <td style="width: 20%;" align="center">Despesas</td>
+                                    <td style="width: 15%;" align="center"> <img style="max-width: 13%;"
+                                            src="./assets/images/info.png" alt="informativo"> </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12" align="center">
+                                <i class="fa-solid fa-download icon"></i>
+                                <i class="fa-solid fa-share-from-square icon"></i>
+                                <br>
+                                <a href="./Index.html" class="btn btn-lg"
+                                    style="--bs-btn-padding-y: 0.3%; --bs-btn-padding-x: 10%; color: white; background-color: #1A3270;">Voltar</a>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-lg-3 col-md-3" align="center">
+                <br>
+                <img style="max-width: 45%;" src="./assets/images/TudonoControle(edi).png" alt="Marca"><br>
+            </div>
+            <div class="col-lg-6 col-md-6" align="center">
+                <p class="rodapeprincipal" align="center">
+                    <br>Sobre o TudonoControle | Dúvidas Frequentes | Fale Conosco | Cookies
+                </p>
+                <p class="rodape1" align="center">
+                    Av. Juscelino Kubitschek, 1890 - Torre A, 20º andar<br>
+                    CEP: 04543-011 | São Paulo-SP<br>
+                    TudonoControle Serviços Financeiros Ltda. | CNPJ: 14.409.777/0001-03
+                    <br><i class="fa-regular fa-copyright direitos" align="center">2023</i>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3" align="center"><br>
+                <h6 style="width: 23%"></h6>ACOMPANHE-NOS</h6><br>
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-linkedin icon"></i>
+                <i class="fa-brands fa-instagram icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-youtube icon"></i>
+                <br>
+            </div>
+    </footer>
+</body>
+
+</html>
